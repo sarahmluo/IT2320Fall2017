@@ -84,7 +84,7 @@ a:visited {
 div.slideShow {
  border: 1px solid rgb(204, 122, 0);
  width: 50%;
- min-height: 380px;
+ height: 380px;
  margin: auto;
  text-align: center;
  padding: 20px;

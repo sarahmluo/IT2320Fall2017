@@ -4,7 +4,7 @@ var captions = ["Kind of hard to do Tai Chi if you can't breathe. Fuyang, Anhui,
 				"There is something sad about this juxtaposition of pristine icebergs with scads of human-produced garbage. Illulissat, Greenland <a target='_blank' href='http://www.huffingtonpost.com/entry/plastic-waste-oceans_us_58fed37be4b0c46f0781d426'> Source </a>",
 				"Rising ocean levels causes high tides that inundate the villages in Kiribati. This palm tree was killed by flooding from ocean waters. Tarawa, Kiribati (2015) <a target='_blank' href='https://www.theguardian.com/environment/gallery/2015/mar/17/pacific-islands-losing-way-of-life-to-climate-change-in-pictures'> Source </a>",
 				"Coral reefs are dying due to rising temperatures and pollution. <a target='_blank' <a href='http://www.healthfreedoms.org/the-great-barrier-reef-die-off-is-the-result-of-more-than-just-climate-change/'> Source </a>",
-				"I don't know about you, but this makes me sad. There has to be a better way. <a target='_blank' href='https://permaculturenews.org/2013/07/25/fossil-fuel-use-pushes-carbon-dioxide-emissions-into-dangerous-territory/'> Source </a>"];
+				"Yep. That's the world I want to live in. <a target='_blank' href='https://permaculturenews.org/2013/07/25/fossil-fuel-use-pushes-carbon-dioxide-emissions-into-dangerous-territory/'> Source </a>"];
 var imageIndex = 0;
 
 
