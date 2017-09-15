@@ -37,6 +37,22 @@
 	</blockquote>
 	
 	<p>
+	Use the buttons below to click through the slideshow and get a glimpse of how climate change and 
+	pollution is affecting our world.
+	<p>
+	
+	<div class="slideShow" id="slideShow">
+		<figure>
+			<img id="slideShowImage" src="images/img1.jpg" alt="Climate Change Slideshow" />
+			<figcaption id="slideShowCaption">  </figcaption>
+		<figure>
+	</div>
+	<div id="buttonContainer">
+		<input name="startButton" type="button" value="Begin Slideshow" onclick="startSlideShow(this)" />
+		<input class="slideShowNav" name="backwards" type="button" value="<--" onclick="navigateSlideShow(this)" /><input class="slideShowNav" name="forwards" type="button" value="-->" onclick="navigateSlideShow(this)" />
+	</div>
+	
+	<p>
 	It's clear that something needs to be done, but what? Well, we can all start by making a small change 
 	in the way we live. Here are some ideas:
 	<ul>
@@ -85,11 +101,21 @@
 	<p> These are just a few ideas of ways we can help change the world for the better. If we all do our part, 
 	these little changes will make a big difference!
 	</p>
+	
+	<div class="pledge">
+		<h2> Why Wait? </h2> Commit now to making a change by checking the box and clicking the button:
+		<p>
+			<input type="checkbox" /> Today I commit to changing one thing in my life that will help the environment.
+		</p>
+		<p>
+			<input type="button" value="Submit" onclick="submitPledge()"/>
+		</p>
+	</div>
 </article>
 
 <footer>
 &copy; 2017 Sarah Luo
 </footer>
-
+<script src="scripts/gl_scripts.js"></script>
 </body>
 </html>
