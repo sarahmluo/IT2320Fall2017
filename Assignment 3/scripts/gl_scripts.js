@@ -52,13 +52,22 @@ function navigateSlideShow(slideShowButton){
 
 
 function submitPledge(){
-	var str = '<p class="thankYouMessage"><h2> Thank You! </h2></p>';
+	
+	var response = "";
+	
+	if(document.getElementById("commitCheckBox").checked){
+		response = "Thank You!";
+	}
+	else{
+		response = "Booooo...";
+	}
+	
 	var myDiv = document.getElementsByClassName("pledge")[0];
 
 	myDiv.innerHTML = "";
 	
 	// Because you can't just build a string and assign it with innerHTML...
-	myDiv.appendChild(document.createElement('p')).appendChild(document.createTextNode("Thank You!"));
+	myDiv.appendChild(document.createElement('p')).appendChild(document.createTextNode(response));
 	myDiv.firstChild.className = "thankYouMessage";	
 }
 
