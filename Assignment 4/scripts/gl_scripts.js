@@ -78,7 +78,7 @@ window.onload = function() {
 	
 		myDiv.innerHTML = "";
 		
-		// Because you can't just build a string and assign it with innerHTML...
+		// Because you can't just build a string and assign it with innerHTML when you want to create new DOM object
 		myDiv.appendChild(document.createElement('p')).appendChild(document.createTextNode(response));
 		myDiv.firstChild.className = "thankYouMessage";	
 	}
