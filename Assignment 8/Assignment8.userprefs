@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{51A094B4-CC00-4E7B-9240-4AED1EAD4208}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment8/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Assignment8/Models/RequestModel.cs" Line="1" Column="1" />
+      <File FileName="Assignment8/Models/ResponseModel.cs" Line="1" Column="1" />
+      <File FileName="Assignment8/Controllers/HomeController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assignment8 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
