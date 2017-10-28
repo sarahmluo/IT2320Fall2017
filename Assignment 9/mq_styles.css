@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/*
+   IT2320 Assignment 9
+   
+   Author: Sarah Luo 
+   Date: 10/27/2017      
+   
+   Filename: mq_styles.css
+
+   This file contains the screen styles for 
+   Assignment 9, media queries
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body styles */
+
+html {
+	background: rgb(225, 225, 234);
+}
+
+body {
+	width: 100%;
+	background-color: white;
+	margin: 0px auto;
+	max-width: 1024px;
+}
+
+/* Header Styles */
+
+header img{
+	display: block;
+	width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+	min-height: 2em; 
+}
+
+nav li {
+	text-align: center;
+	line-height: 2em;
+	color: white;
+	background-color: rgb(179, 0, 0);
+}
+
+nav li:hover {
+	background-color: white;
+	color: rgb(179, 0, 0);
+}
+
+/* Section Styles */
+
+section{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+section h1 {
+	font-size: 2.5em;
+	line-height: 2em;
+}
+
+section p{
+	margin-bottom: 10px;
+}
+
+/* Article Styles */
+
+article {
+	padding: 20px;
+	margin: 0px 0px;
+	vertical-align: top;
+}
+
+
+/* Aside Styles */
+
+aside {
+	padding: 20px;
+	margin: 0px 0px;
+	text-align: center;
+	border: 2px solid black;
+}
+
+aside img{
+	display: block;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 5px;
+	
+}
+
+
+/* Footer Styles */
+
+footer {
+	text-align: center;
+	padding-top: 10px;
+	
+}
+
+
+
+
+/* ===========
+   Mobile Styles
+   ===========
+*/
+
+@media only screen and (max-width: 480px){
+
+	
+	body {
+		color: rgb(179, 0, 0);
+	}
+	
+	nav li{
+		color: rgb(179, 0 ,0);
+		background: white;
+	}
+	
+	nav li:hover{
+		outline: 5px solid black;
+	}
+
+}
+
+
+/* ===========
+   Tablet Styles
+   ===========
+*/
+
+@media only screen and (min-width: 481px){
+
+	article{
+		width: 100%;
+		display: inline-block;
+	}
+	
+	aside {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+	}
+	
+	nav li {
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+
+}
+
+
+/* ===========
+   Desktop Styles
+   ===========
+*/
+
+@media only screen and (min-width: 769px){
+
+	article {
+		width: 70%;
+	}
+	
+	aside {
+			display: inline-block;
+			width: 29%;
+	}
+	
+
+
+}
+
