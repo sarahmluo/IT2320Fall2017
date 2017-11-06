@@ -1,0 +1,132 @@
+﻿@charset "utf-8";
+
+/********************************************
+
+    Filename: Home.css
+    Author: Sarah Luo
+    Date Created: 11/4/2017
+
+
+    Info: Contains styles for Student 
+           Services Page (Index.cshtml)
+
+
+*********************************************/
+
+/* Header Styles */
+
+header {
+    font: bold 16px Cambria, serif;
+    text-align: center;
+}
+
+header > p {
+    font: italic 12px Calibri, sans serif;
+    text-align: center;
+}
+
+/* Body Styles */
+
+body {
+	font: 12px Calibri, sans serif;
+}
+
+/* Div Styles */
+
+div.home{
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+section.loginSection{
+	line-height: 1.2em;
+}
+
+/* Form Styles */
+
+section.loginSection > form{
+	text-align: right;
+	line-height: 2em;
+}
+
+input[type="submit"]{
+	width: 40%;
+	background-color: rgb(0, 153, 153);
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+
+input[type="submit"]:hover{
+	text-decoration: underline;
+}
+
+/* Footer Styles */
+
+footer {
+	margin-top: 10px;
+	/*outline: 1px solid green;*/
+}
+
+
+/*========
+  Mobile Styles
+=========*/
+
+@media only screen and (max-width: 480px){
+
+	body {
+		width: 460px;
+		margin: 0 10px 0;
+		/*outline: 2px solid green;*/
+	}
+	
+	header {
+		text-align: center;
+	}
+	
+	header > p {
+		text-align: center;
+	}
+	
+	section.loginSection > p{
+		display: none;
+	}
+
+}
+
+
+/*========
+  Desktop Styles
+=========*/
+
+@media only screen and (min-width: 481px){
+	
+	body {
+		width: 520px;
+		margin: auto;
+		/*outline: 1px solid red;*/
+	}
+	
+	header {
+		text-align: left;
+	}
+	
+	header > p {
+		text-align: left;
+	}
+	
+	section.loginSection > p{
+		display: inline-block;
+		/*outline: 1px solid red;*/
+		width: 230px;
+		vertical-align: top;
+	}
+	
+	section.loginSection > form{
+		display: inline-block;
+		width: 240px;
+	}
+	
+}
