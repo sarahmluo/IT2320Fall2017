@@ -39,9 +39,6 @@ div.home{
 	padding: 10px;
 }
 
-section.loginSection, section.signUpSection{
-	line-height: 1.2em;
-}
 
 /* Form Styles */
 
@@ -50,9 +47,7 @@ section.loginSection > form, section.signUpSection > form{
 	line-height: 2em;
 }
 
-input[type="text"], input[type="password"], input[type="email"] {
-	width: 170px;
-}
+
 
 input[type="submit"]{
 	width: 40%;
@@ -86,11 +81,11 @@ hr {
   Mobile Styles
 =========*/
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 520px){
 
 	body {
-		width: 460px;
-		margin: 0 10px 0;
+		width: 90%;
+		margin: auto;
 		/*outline: 2px solid green;*/
 	}
 	
@@ -105,6 +100,33 @@ hr {
 	section.loginSection > p, section.signUpSection > p{
 		display: none;
 	}
+	
+	section.loginSection > form, section.signUpSection > form{
+		text-align: left;
+		width: 100%;
+	}
+	
+	section.loginSection > form input[type="text"], 
+	section.loginSection > form input[type="password"], 
+	section.loginSection > form input[type="email"] {
+		float: right;
+		width: 50%;
+		margin-right: 30%;
+	}
+	
+	section.signUpSection > form input[type="text"], 
+	section.signUpSection > form input[type="password"], 
+	section.signUpSection > form input[type="email"] {
+		float: right;
+		width: 50%;
+		margin-right: 10%;
+	}
+	
+	input[type="submit"]{
+		margin: 10px auto 10px;
+		width: 100%;
+		height: 50px;
+	}
 
 }
 
@@ -113,7 +135,7 @@ hr {
   Desktop Styles
 =========*/
 
-@media only screen and (min-width: 481px){
+@media only screen and (min-width: 521px){
 	
 	body {
 		width: 520px;
@@ -140,6 +162,10 @@ hr {
 	section.loginSection > form, section.signUpSection > form{
 		display: inline-block;
 		width: 310px;
+	}
+	
+	input[type="text"], input[type="password"], input[type="email"] {
+		width: 170px;
 	}
 	
 }
