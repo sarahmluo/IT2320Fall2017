@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/********************************************
+
+    Filename: cv_styles.css
+    Author: Sarah Luo
+    Date Created: 11/9/2017
+
+
+    Info: Contains styles for Canvas Carousel
+
+
+*********************************************/
+
+canvas {
+	height: 300px;
+	width: 800px;
+	border: 1px solid black;
+	margin: auto;
+}
