@@ -13,6 +13,10 @@
 
 *********************************************/
 
+div#notLoggedIn{
+	display: none;
+}
+
 /* Header Styles */
 
 header {
@@ -47,9 +51,7 @@ section.loginSection > form, section.signUpSection > form{
 	line-height: 2em;
 }
 
-
-
-input[type="submit"]{
+button{
 	width: 40%;
 	background-color: rgb(0, 153, 153);
 	border-radius: 5px;
@@ -59,8 +61,45 @@ input[type="submit"]{
 	margin: 10px 0 10px;
 }
 
-input[type="submit"]:hover{
+button:hover{
 	box-shadow: 5px 5px 20px #888;
+}
+
+button.update {
+	width: 60px;
+	padding: 5px;
+}
+
+button:hover{
+	box-shadow: 2px 2px 10px #888;
+}
+
+/* Section Styles */
+
+section#accountInfo > table{
+	width: 80%;
+	border: 1px solid black;
+	margin: 10px auto 0;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+section#accountInfo > table tr td:first-child{
+	text-align:center;
+	border-right: 1px solid black;
+}
+
+section#accountInfo > table td{
+	padding: 5px 10px 0;
+	
+}
+
+section#addElement {
+	text-align: right;
+	line-height: 2em;
+	width: 260px;
+	margin: 0 auto 10px;
+	/*outline: 1px solid red;*/
 }
 
 /* Footer Styles */
@@ -76,6 +115,12 @@ hr {
 	margin-bottom: 15px;
 }
 
+hr.account {
+	background-color: rgba(0, 153, 153, 0.7);
+	height: 5px;
+	margin: 30px auto 30px;
+	width: 90%;
+}
 
 /*========
   Mobile Styles

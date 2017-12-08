@@ -74,7 +74,7 @@ Sassy.calculateVelocity = function(x,y){
 	else if(!Sassy.mouseLeft){
 		var a = Sassy.canvas.width/2;
 		var b = Sassy.canvas.width;
-		var vel = 2*(x-a)/(b-a);
+		var vel = 3*(x-a)/(b-a);
 
 		Sassy.velocity = Math.round(vel*100)/100;
 	}
