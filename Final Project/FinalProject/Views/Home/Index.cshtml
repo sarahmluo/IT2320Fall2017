@@ -1,0 +1,97 @@
+﻿@model FinalProject.Models.HomeViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Styles/Home.css" rel="stylesheet" />
+    <title>Final Project</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Cuyahoga Community College Student Services Online</h1>
+        <p>
+            Cuyahoga Community College recognizes students' rights to access personal
+            and academic records in accordance with the Family Educational Rights and Privacy
+            act of 1974 (FERPA) as amended by Public Law 93-568.
+        </p>
+    </header>
+
+
+    <div class="home">
+        <div class="notLoggedIn">
+            <section class="loginSection">
+                <p>
+                    Already have an account with us? Returning users may log in
+                    by entering their site username and password
+                </p>
+
+                <div id="loginForm">
+                    <label for="username"> Username: </label>
+                    <input type="text" id="username"></input>
+                    <span class="error" id="usernameError"></span>
+                    <label for="password"> Password: </label>
+                    <input type="password" id="password"></input>
+                    <span class="error" id="passwordError"></span>
+                    <button id="loginButton">Log in</button>
+                </div>
+            </section>
+
+            <hr />
+
+            <section class="signUpSection">
+                <p>
+                    New users, please create a new account by providing us
+                    with some basic information.
+                </p>
+
+                <div id="signUpForm">
+                    <label for="username"> Username: </label>
+                    <input type="text" id="createUsername"></input> 
+                    <span class="error" id="createUsernameError"></span> 
+                    <label for="password"> Password: </label>
+                    <input type="password" id="createPassword"></input>
+                    <span class="error" id="createPasswordError"></span> 
+                    <label for="email"> E-Mail Address: </label>
+                    <input type="email" id="createEmail"></input> 
+                    <span class="error" id="createEmailError"></span>
+                    <label for="emailCon"> Repeat E-Mail Address: </label>
+                    <input type="email" id="createEmailCon"></input> 
+                    <span class="error" id="createEmailConError"></span>
+                    <button id="createAccountButton">Create Account</button>
+                </div>
+            </section>
+        </div>
+        <div class="loggedIn">
+            <section class="accountInfo" id="accountInfo">
+                <span class="error" id="getAccountInfoError"></span>
+                
+                <!--<div class="elementName">AccountName</div>
+                <div class="elementValue" id="accountName">&nbsp;</div>
+                <div class="elementUpdate">&nbsp;</div>    -->       
+                
+            </section>
+
+            <hr class="account" />
+
+            
+            <section class="addElement">
+                <label for="elementName"> ElementName: </label>
+                <input type="text" id="addElementName" /> <br />
+                <span class="error" id="addAccountInfoError"></span>
+                <label for="elementValue"> ElementValue: </label>
+                <input type="text" id="addElementValue" /> <br />
+                <button class="add" id="addElement">Add</button>
+
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        Cuyahoga Community College <br />
+        700 Carnegie Avenue, Cleveland OH
+    </footer>
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/Home.js"></script>
+</body>
+</html>
